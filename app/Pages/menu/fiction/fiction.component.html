@@ -1,0 +1,54 @@
+
+<!--<div class="banner">
+   <div id="header" class="scroll">
+        <span class="slide">
+            <a href="../assets/text/1984.txt"><img src="../assets/images/f3.jpg" alt="" width="150" height="200"></a>
+            <h4>PRIDE AND PREJUDICE</h4>
+            <div class="btns" >
+             <Button  id="btnh1" class="btn" appFavButton><i class="fas fa-heart"></i></Button>
+            </div>
+        </span>
+        <span class="slide">
+            <a href="../assets/text/Ghosts Of The Silent Hills.txt"><img src="../assets/images/f2.jpg" alt="" width="150" height="200"></a> 
+            <h4>DARK MATTER</h4>
+            <div class="btns">
+            <Button  id="btnh1" class="btn" appFavButton><i class="fas fa-heart"></i></Button>  
+            </div>         
+        </span>
+        <span class="slide">
+            <a href="../assets/text/Theilluminated.txt"><img src="../assets/images/f4.jpg" alt="" width="150" height="200"></a>
+            <h4>WHEREABOUTS</h4>
+            <div class="btns">
+            <Button  id="btnh1" class="btn" appFavButton><i class="fas fa-heart"></i></Button>
+        </div>
+        </span>    
+    </div>
+</div>
+<table >
+    
+    <tbody>
+      <tr *ngFor="let item of bookData">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.title}}</td>
+        <td>{{item.author}}</td>
+       
+      </tr>
+     
+    </tbody>
+  </table>-->
+  
+    <h1>ALL GENERS</h1>
+  <div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of bookData">
+      <div class="card col-md-3">
+        <a href="../assets/text/Ghosts Of The Silent Hills.txt"><img src="{{item.image}}" alt=""></a>
+        <h5>{{item.title}}</h5>
+        <h5>{{item.author}}</h5>
+        <!--<button class="btn btn-primary" (click)=addtofav(item)>Add to favourite</button>-->
+        <Button  id="btnh1" class="btn" (click)=addtofav(item) appFavButton><i class="bi bi-heart-fill"></i></Button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+
+<table class="table">
+    <td><a routerLink="/add" >Add</a></td>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of bookData">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.title}}</td>
+            <td>{{item.author}}</td>
+            <td><span (click)="deleteBook(item.id)">Delete</span></td>
+            
+        </tr>
+    </tbody>
+</table>

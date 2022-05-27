@@ -1,0 +1,89 @@
+
+.banner{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-image: url(../../../assets/Image/tealbg.jpg);
+    background-position:center;
+    background-size:cover;
+    padding-top:17rem;
+    padding-bottom:10rem;
+}
+.content{
+    text-align: center;
+    
+    
+
+}
+.content h3{
+    text-align:left;
+    color:#000;
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-style: italic;
+    margin-left: 10px;
+    
+
+}
+.content p{
+    color:#000;
+    font-size: 20px;
+    font-style: italic;
+    
+
+}
+.content.i{
+    text-align: center;
+}
+.content a{
+    text-decoration:none;
+    background-color:#476C9B;
+    color:var(--primary-color);
+    padding:10px 10px;
+    border-radius:5px;   
+    
+}
+.content a:hover{
+    background-color:var(--primary-color);
+    color:#fff;
+
+}
+ h1{
+    text-align: center;
+    color:#476C9B;
+    margin-bottom: 20px;
+    
+
+}
+.image{
+    display:flex;
+    height:400px;
+    padding:10px 10px;
+    border-left: 10px;
+}
+
+.image img{
+    padding:10px;
+    
+}
+.container{
+    display:flex;
+    align-content: center;
+}
+.split{
+    height:100%;
+    width:50%;
+    
+}
+.split  img{
+    height:500px;
+    width:500px;
+}
+
+
+
+
+
+

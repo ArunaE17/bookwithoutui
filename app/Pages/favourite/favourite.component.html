@@ -1,0 +1,38 @@
+<div class="banner">
+    <div class="container">
+    <ng-container *ngIf="product.length !=0">
+        <div class="card-table">
+            <div class="fav-book">
+                <table class=" table table-responsive ">
+                  <tbody >
+                      <tr *ngFor="let item of product;let i = index">
+                          <td>{{i+1}}</td>
+                          <td>{{item.title}}</td>
+                          <td><a href="../assets/text/Ghosts Of The Silent Hills.txt"><img src="{{item.image}}"></a> </td>
+                          <td>{{item.author}}</td>
+                          <td>
+                              <button (click)="removeFBook(item)"   class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                          </td>
+                      </tr>
+                  </tbody>  
+                </table>
+
+            </div>
+        </div>
+    </ng-container>
+    </div>
+
+<ng-container *ngIf="product.length==0">
+<div class="container">
+    <br><br>
+    <h3 class="card-title">Favorites</h3>
+
+<div class="center">
+    <img id="a" src="../assets/Image/l2.png" alt="">
+    <h4>Your collection is empty!!</h4>
+    <h5>Start Reading!!</h5>
+
+</div>
+</div>
+</ng-container>
+</div>
